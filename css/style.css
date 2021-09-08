@@ -1,0 +1,2635 @@
+/* color :  #f82868 
+font-family: 'Abril Fatface', cursive;
+*/
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    list-style: none;
+    color: #fff;
+}
+
+*::selection{
+    background:#f82868;
+    color:#fff;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #080808;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,.1);
+    z-index: 100;
+    background-color:#0808088e;
+}
+header a div{
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 1px 24px;
+    background-color: #f82868;
+    font-family: 'Abril Fatface', cursive;
+}
+
+header .bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .bar ul li{
+    margin-left: 20px;
+}
+
+header .bar ul li a{
+    font-size:16px;
+    color:#fff;
+}
+header .bar ul li a.active,
+header .bar ul li a:hover{
+    color:#f82868;
+    border-bottom: 7px #f82868 dotted;
+}
+
+#menuicon{
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*home*/
+#home {
+    height: 100%;
+    padding: 30px 10%;
+    width: 100%;
+    color: #fff;   
+}
+.home{
+    
+    width: 100%;
+    height: 600px;
+}
+.home .content{
+    position: absolute;
+    top: 150px;
+    left: -32px;
+}
+.home .content h3{
+    font-size: 25px;
+    letter-spacing: 4px;
+    color: #fff;
+    text-transform: capitalize;
+    
+}
+.home .content div{
+    font-size: 50px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.home  .image{
+    width: 500px;
+    height: 450px;
+   background: url(../images/gym.png) no-repeat;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   margin: 90px auto;
+}
+
+.home  .image::before{
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: #f82868;
+    border-radius: 50%;
+   
+    position: absolute;
+    left: 49px;
+    top: 5px;
+    z-index: -1;
+}
+.home  .image::after{
+    content: "";
+    width: 85%;
+    height: 85%;
+    background-color: #080808;
+    border-radius: 50%;
+    border: 2px #f82868 dashed;
+    position: absolute;
+    left: 35px;
+    top: -9px;
+    z-index: -2;
+}
+
+
+
+
+
+#services{
+    width: 100%;
+    height: 370px;
+    padding: 0px 10%;
+    padding-top: 90px;
+
+}
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.services .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 250px;
+    background-color:#131313;
+    cursor: pointer;
+}
+.services .content:hover{
+    background-color: #f82868;
+}
+.services .content:hover div span{
+    background-color: #fff;
+    color: #f82868;
+
+}
+.services .content:hover div span::before{
+    border: #fff 2px dashed;
+
+}
+.services .content div span{
+    font-size: 40px;
+    color:#fff;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f82868;
+    position: relative;
+    z-index: 11;
+}
+.services .content div span::before{
+    content: "";
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: -1;
+    border: 2px dashed #f82868;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+.services .content h4{
+    font-size: 22px;
+    color:#fff;
+}
+.services .content p{
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/*about*/
+
+
+.about{
+    width: 100%;
+    height: 700px;
+    padding: 0px 10%;
+    padding-top: 100px;
+}
+.about h5{
+    font-size: 20px;
+    color: #f82868;
+    padding-left: 14px;
+    border-left: 2px solid #f82868;
+}
+.about h5 div{
+    font-size: 34px;
+    color: #fff;
+}
+
+.about .content{
+    width:100%;
+    height: 530px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .content .left{
+    width: 50%;
+}
+.about .content .left img{
+    width: 100%;
+    height: 500px;
+}
+.about .content .right{
+    width: 40%;
+    height: 400px;
+}
+.about .content .right h4{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .content .right p{
+    font-size: 19px;
+    padding-top: 20px;
+    line-height: 28px;
+    margin: 20px 0px;
+
+}
+.about .content .right div button{
+    color: #f82868;
+    border: 2px solid #f82868;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.about .content .right div button:hover{
+    color: #fff;
+    background-color: #f82868;
+}
+
+
+.team{  
+    
+    width: 100%;
+    height: 700px;
+    background:url(../images/teamback.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 30px 10%;
+    
+}
+.team h5{
+    font-size: 20px;
+    color: #f82868;
+    padding-left: 14px;
+    border-left: 2px solid #f82868;
+
+}
+.team h5 div{
+    font-size: 34px;
+    color: #fff;
+}
+.team .content{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self:center;
+}
+.team .content .info{
+    position: relative;
+    width: 32.5%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+}
+.team .content .info img{
+    width: 100%;
+    height: 300px;
+
+}
+.team .content .shape {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: #f82868;
+    clip-path: polygon(80% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 21% 50%);
+    top: 150px;
+    left: 0px;
+}
+.team .content .info h4{
+    font-size: 21px;
+    position: absolute;
+    top: 300px;
+    
+}
+
+.team .content .info p{
+    font-size: 16px;
+    position: absolute;
+    top: 340px;
+    width: 88%;
+   
+
+}
+.team .content .info .social{
+    width: 100%;
+    position: absolute;
+    bottom: -78px;
+    text-align: center;
+}
+.team .content .info .social i{
+    font-size: 39px;
+    color: #f82868;
+    margin: 0px 14px;
+}
+.team .content .info .social i:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+/*news*/
+
+.news{
+    width: 100%;
+    height: 800px;
+    padding: 0px 10%;
+    padding-top: 100px;
+}
+.newshide{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.news h5{
+    font-size: 20px;
+    color: #f82868;
+    padding-left: 14px;
+    border-left: 2px solid #f82868;
+}
+.news h5 div{
+    font-size: 34px;
+    color: #fff;
+}
+
+
+.news-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 100%;
+    height: 500px;
+}
+.news-container2{
+    display: none;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 100%;
+    height: 500px;
+
+}
+
+.news-container .box,.news-container2 .box{
+    width: 30%;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+.news-container .box img,.news-container2 .box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit:cover;
+}
+.news-container .box h3 i,.news-container2 .box h3 i{
+    font-size: 30px;
+    color: #f82868;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    transition: .3s linear;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 18px 27px;
+    border: 5px solid #ce5475;
+}
+.news-container .box h4,.news-container2 .box h4{
+    font-size: 15px;    
+    color: white;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+   transition: .3s linear;
+    border-left: #fff 2px solid;
+    padding-left: 4px;
+ 
+}
+.news-container .box h4 div,.news-container2 .box h4 div{
+    font-size: 18px;
+}
+.news-container .box:hover h4,.news-container2 .box:hover h4{
+    top: 88%;
+    opacity: 1;
+    transition: .3s linear;
+
+}
+.news-container .box:hover h3 i,.news-container2 .box:hover h3 i{
+    top: 40%;
+    opacity: 1;
+    transition: .3s linear;
+
+}
+.news-container .box::before,.news-container2 .box::before{
+    content: "";
+    position: absolute;
+    background-color: #f8286677;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0px;
+    opacity: 0;
+    transition: .3s linear;
+}
+.news-container .box:hover::before,.news-container2 .box:hover::before{
+    top: 0%;  
+    opacity: 1;  
+    transition: .3s linear;
+
+
+}
+.number{
+    margin-left: 30px;
+}
+.number .active{
+    color: #f82868;
+}
+.number span{
+    margin: 0px 8px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/*buisness*/
+#business{
+width: 100%;
+height: 500px;
+overflow: hidden;
+
+}
+.buisness{
+    width: 100%;
+    height: 550px;
+    padding: 0px 10%;
+    
+}
+.bushide{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+.buisness .heading{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.buisness h5{
+    font-size: 20px;
+    color: #f82868;
+    padding-left: 14px;
+    border-left: 2px solid #f82868;
+
+}
+.buisness h5 div{
+    font-size: 34px;
+    color: #fff;
+}
+.buisness .box {
+    position: relative;
+    width: 300px;
+    border-radius: 30px;
+    height: 60px;
+    box-shadow: 0 0 3px #707070 inset;
+    cursor: pointer;
+    transition:all .2s ease-in-out;
+    background-color: #fff;
+    
+    }
+    .buisness .box span:nth-child(1){
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 50%;
+        height: 100%;
+        border-radius: 30px;
+        text-align: center;
+        padding: 19px;
+        color: #000;
+        
+        
+
+    }
+    .buisness .box .active{
+        background-color: #f82868;
+        color: #fff !important;
+        transition:.5s linear;
+    }
+
+    
+    .buisness .box span:nth-child(2){
+        position: absolute;
+        color: #000;
+        width: 50%;
+        height: 100%;
+        border-radius: 30px;
+        right :0px;
+        padding: 19px;
+        top: 0px;
+        text-align: center;
+
+    
+    }
+    .buisness .content{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    .buisness .content2{
+        width: 100%;
+        height: 450px;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .buisness .content .box{
+        width: 30%;
+        height: 300px;
+        border-radius: 3px;
+        background-color: #fff;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .buisness .content .box h6{
+        font-size: 20px;
+        color: black;
+        padding: 10px;
+
+    }
+    .buisness .content .box h4{
+        font-size: 33px;
+        color: white;
+        font-weight: 900;
+        width: 100%;
+        background-color: #f82868;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .buisness .content .box button{
+        color: #f82868;
+        border: 2px solid #f82868;
+        padding: 10px 30px;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+    .buisness .content .box button:hover{
+        color: #fff;
+        background-color: #f82868;
+    }
+    .buisness .content2 .box{
+        width: 30%;
+        height: 300px;
+        border-radius: 3px;
+        background-color: #fff;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .buisness .content2 .box h6{
+        font-size: 20px;
+        color: black;
+        padding: 10px;
+
+    }
+    .buisness .content2 .box h4{
+        font-size: 33px;
+        color: white;
+        font-weight: 900;
+        width: 100%;
+        background-color: #f82868;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .buisness .content2 .box button{
+        color: #f82868;
+        border: 2px solid #f82868;
+        padding: 10px 30px;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+    .buisness .content2 .box button:hover{
+        color: #fff;
+        background-color: #f82868;
+    }
+
+    /*v.contact*/
+    #contact{
+        height: 650px;
+    }
+    .contact{
+
+        width: 100%;
+        height: 500px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        
+    }
+   
+    .back{
+        width: 100%;
+        height: 450px;
+        background-size: contain;
+        background-position:center;
+        background: url(../images/contact.jpg)no-repeat;
+        padding: 0px 10%;
+        position: relative;
+        z-index: 21;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .back::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 450px;
+        background-color: #f8286652;
+    }
+    .back h4{
+        font-size: 20px;
+        color: #fff;
+        padding-left: 14px;
+        border-left: 2px solid #fff;
+        z-index: 22;
+    
+    }
+    .back h4 div{
+        font-size: 34px;
+        color: #fff;
+        z-index: 22;
+      
+    }
+    
+    .back button{
+        color: #000;
+        padding: 10px 30px;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color: #fff;
+        cursor: pointer;
+        z-index: 444;
+    }
+    .back button:hover{
+        color: #fff;
+        background-color: #f82868;
+        
+    }
+    .foot{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .foot h5{
+        font-size: 40px;
+        text-transform: uppercase;
+        padding: 1px 24px;
+        background-color: #f82868;
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
+
+    }
+
+    .foot .bar ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+    
+    .foot .bar ul li{
+        margin-left: 25px;
+    }
+    
+    .foot .bar ul li a{
+        font-size:18px;
+        color:#fff;
+    }
+   
+    .foot .bar ul li a:hover{
+        color:#f82868;
+        border-bottom: 7px #f82868 dotted;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 900px){
+        header .bar::-webkit-scrollbar{
+            width:18px;
+        }
+        
+        header .bar::-webkit-scrollbar-track{
+            background:#333;
+        }
+        
+        header .bar::-webkit-scrollbar-thumb{
+            background:#666;
+        }
+        
+        header{
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 5%;
+            box-shadow: 0px 6px 5px 0px rgba(0,0,0,.1);
+            z-index: 100;
+            background-color:#0808088e;
+        } 
+        header .bar{
+    position: fixed;
+    top:99px;
+    right: 0;
+    width:30%;
+    height: 77%;
+    overflow-y: auto;
+    background:#f82866d5;
+    transform:scaleY(0);
+    transform-origin:top;
+    opacity: 0;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: -1px 6px 11px 0px #050505;
+
+}
+#menuicon{
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+}
+.fa-times{
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+}
+header .bar.nav-toggle{
+    transform:scaleY(1);
+    opacity: 1;
+}
+header .bar ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 90;
+    list-style: none;
+}
+
+header .bar ul li{
+    margin-left:0px;
+    padding: 0px 20px;
+}
+
+header .bar ul li a{
+    font-size:24px;
+    color:#fff;
+    padding: 0px 4px;
+}
+header .bar ul li a.active,
+header .bar ul li a:hover{
+    color:black;
+    border-bottom: #000 dotted 5px;
+}
+
+#home {
+    
+    padding: 30px 2%;
+    
+    }
+
+    #business{
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        
+        }
+
+
+#services ,.about,.news{
+    padding: 0px 1%;
+    padding-top: 95px;
+}
+
+
+    .services .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 32%;
+        height: 250px;
+        background-color:#131313;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+    .team{  
+    
+        width: 100%;
+        height:760px;
+        background:url(../images/teamback.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 0px 1%;
+        padding-top: 95px;
+        
+    }
+    
+    .team .content{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self:center;
+    }
+    
+    
+    
+    
+    .news-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        width: 100%;
+        height: 500px;
+    }
+    .news-container2{
+        display: none;
+        justify-content: space-evenly;
+        align-items:center;
+        width: 100%;
+        height: 500px;
+    
+    }
+    
+    .news-container .box,.news-container2 .box{
+        width: 32%;
+        height: 400px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    
+    }
+
+
+
+
+    #business{
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        
+        }
+        .buisness{
+            width: 100%;
+            height: 450px;
+            padding: 0px 1%;
+        padding-top: 95px;
+        }
+        
+       
+        .buisness h5{
+            font-size: 20px;
+            color: #f82868;
+            padding-left: 14px;
+            border-left: 2px solid #f82868;
+        
+        }
+        .buisness h5 div{
+            font-size: 34px;
+            color: #fff;
+        }
+        .buisness .box {
+            position: relative;
+            width: 290px;
+            border-radius: 30px;
+            height: 58px;
+            box-shadow: 0 0 3px #707070 inset;
+            cursor: pointer;
+            transition:all .2s ease-in-out;
+            background-color: #fff;
+            
+            }
+            .buisness .box span:nth-child(1){
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 50%;
+                height: 100%;
+                border-radius: 30px;
+                text-align: center;
+                padding: 19px;
+                color: #000;
+                
+                
+        
+            }
+        
+            
+            .buisness .box span:nth-child(2){
+                position: absolute;
+                color: #000;
+                width: 50%;
+                height: 100%;
+                border-radius: 30px;
+                right :0px;
+                padding: 19px;
+                top: 0px;
+                text-align: center;
+        
+            
+            }
+            .buisness .content{
+                width: 100%;
+                height: 450px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+           
+            .buisness .content2{
+                width: 100%;
+                height: 450px;
+                display: none;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .buisness .content .box{
+                width: 32%;
+                height: 300px;
+                border-radius: 3px;
+                background-color: #fff;    
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        
+            .buisness .content .box h6{
+                font-size: 20px;
+                color: black;
+                padding: 10px;
+        
+            }
+            .buisness .content .box h4{
+                font-size: 33px;
+                color: white;
+                font-weight: 900;
+                width: 100%;
+                background-color: #f82868;
+                text-align: center;
+                padding: 20px 0;
+            }
+            .buisness .content2 .box{
+                width: 32%;
+                height: 300px;
+                border-radius: 3px;
+                background-color: #fff;    
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }       
+
+
+
+
+    .contact{
+        padding-top: 120px;
+    }
+    
+    
+    #contact{
+        height: 650px;
+    }
+    .contact{
+    
+        width: 100%;
+        height: 500px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .back{
+        width: 100%;
+        height: 380px;
+        background-size: contain;
+        background-position:center;
+        background: url(../images/contact.jpg)no-repeat;
+        padding: 0px 1%;
+        position: relative;
+        z-index: 21;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .back::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 380px;
+        background-color: #f8286652;
+    }
+    .back h4{
+        font-size: 20px;
+        color: #fff;
+        padding-left: 14px;
+        border-left: 2px solid #fff;
+        z-index: 22;
+    
+    }
+    .back h4 div{
+        font-size: 34px;
+        color: #fff;
+        z-index: 22;
+      
+    }
+    
+    
+  
+    .foot h5{
+        font-size: 40px;
+        text-transform: uppercase;
+        padding: 1px 24px;
+        background-color: #f82868;
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
+        margin-top: 10px;
+    
+    }
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 729px){
+
+    header .bar{
+        position: fixed;
+        top:99px;
+        right: 0;
+        width:60%;
+        height: 77%;
+        overflow-y: auto;
+        background:#f82866d5;
+        transform:scaleY(0);
+        transform-origin:top;
+        opacity: 0;
+        border-radius: 4px;
+        text-align: center;
+        box-shadow: -1px 6px 11px 0px #050505;
+    
+    }
+/*home*/
+#home {
+    height: 100%;
+    padding: 30px 2%;
+    width: 100%;
+    color: #fff;   
+}
+.home{
+    width: 100%;
+    height: 600px;
+}
+.home .content{
+    position: absolute;
+    top: 150px;
+    left: -32px;
+}
+.home .content h3{
+    font-size: 25px;
+    letter-spacing: 4px;
+    color: #fff;
+    text-transform: capitalize;
+    
+}
+.home .content div{
+    font-size: 50px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.home  .image{
+    width: 500px;
+    height: 450px;
+   background: url(../images/gym.png) no-repeat;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   margin: 90px auto;
+}
+
+.home  .image::before{
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: #f82868;
+    border-radius: 50%;
+   
+    position: absolute;
+    left: 52px;
+    top: 5px;
+    z-index: -1;
+}
+.home  .image::after{
+    content: "";
+    width: 85%;
+    height: 85%;
+    background-color: #080808;
+    border-radius: 50%;
+    border: 2px #f82868 dashed;
+    position: absolute;
+    left: 35px;
+    top: -9px;
+    z-index: -2;
+}
+
+
+
+
+
+#services{
+    width: 100%;
+    height:1500px;
+    padding: 0px 2%;
+    padding-top: 90px;
+
+}
+.services {
+    height:1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.services .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 55%;
+    height: 350px;
+    background-color:#131313;
+    cursor: pointer;
+}
+.services .content:hover{
+    background-color: #f82868;
+}
+.services .content:hover div span{
+    background-color: #fff;
+    color: #f82868;
+
+}
+.services .content:hover div span::before{
+    border: #fff 2px dashed;
+
+}
+.services .content div span{
+    font-size: 40px;
+    color:#fff;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f82868;
+    position: relative;
+    z-index: 11;
+}
+.services .content div span::before{
+    content: "";
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: -1;
+    border: 2px dashed #f82868;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+.services .content h4{
+    font-size: 22px;
+    color:#fff;
+}
+.services .content p{
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/*about*/
+
+
+.about{
+    width: 100%;
+    height: 1200px;
+    padding: 0px 2%;
+    padding-top: 100px;
+}
+.about h5{
+    font-size: 20px;
+    color: #f82868;
+    padding-left: 14px;
+    border-left: 2px solid #f82868;
+}
+.about h5 div{
+    font-size: 34px;
+    color: #fff;
+}
+
+.about .content{
+    width:100%;
+    height: 830px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .content .left{
+    width:60%;
+}
+.about .content .left img{
+    width: 100%;
+    height: 500px;
+}
+.about .content .right{
+    width: 80%;
+    height: 400px;
+}
+.about .content .right h4{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .content .right p{
+    font-size: 19px;
+    padding-top: 20px;
+    line-height: 28px;
+    margin: 20px 0px;
+
+}
+.about .content .right div button{
+    color: #f82868;
+    border: 2px solid #f82868;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.about .content .right div button:hover{
+    color: #fff;
+    background-color: #f82868;
+}
+
+
+.team{  
+    
+    width: 100%;
+    height: 1900px;
+    background:url(../images/teamback.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 90px;
+  
+    
+}
+.team h5{
+    font-size: 20px;
+    color: #f82868;
+    padding-left: 14px;
+    border-left: 2px solid #f82868;
+
+}
+.team h5 div{
+    font-size: 34px;
+    color: #fff;
+}
+.team .content{
+    width: 100%;
+    height: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self:center;
+    padding: 0px 2%;
+}
+.team .content .info{
+    position: relative;
+    width: 50%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+}
+.team .content .info img{
+    width: 100%;
+    height: 300px;
+
+}
+.team .content .shape {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: #f82868;
+    clip-path: polygon(80% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 21% 50%);
+    top: 150px;
+    left: 0px;
+}
+.team .content .info h4{
+    font-size: 21px;
+    position: absolute;
+    top: 300px;
+    
+}
+
+.team .content .info p{
+    font-size: 16px;
+    position: absolute;
+    top: 340px;
+    width: 88%;
+   
+
+}
+.team .content .info .social{
+    width: 100%;
+    position: absolute;
+    bottom: -78px;
+    text-align: center;
+}
+.team .content .info .social i{
+    font-size: 39px;
+    color: #f82868;
+    margin: 0px 14px;
+}
+.team .content .info .social i:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+/*news*/
+
+.news{
+    width: 100%;
+    height: 1800px;
+    padding: 0px 2%;
+    padding-top: 100px;
+}
+
+.news h5{
+    font-size: 20px;
+    color: #f82868;
+    padding-left: 14px;
+    border-left: 2px solid #f82868;
+    margin-bottom: 10px;
+}
+.news h5 div{
+    font-size: 34px;
+    color: #fff;
+}
+
+
+.news-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+    height: 1400px;
+}
+.news-container2{
+    display: none;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+    height: 1400px;
+
+}
+
+.news-container .box,.news-container2 .box{
+    width: 50%;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+.news-container .box img,.news-container2 .box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit:cover;
+    z-index: 444;
+}
+.news-container .box h3 i,.news-container2 .box h3 i{
+    font-size: 30px;
+    color: #f82868;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    transition: .3s linear;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 18px 27px;
+    border: 5px solid #ce5475;
+}
+.news-container .box h4,.news-container2 .box h4{
+    font-size: 15px;    
+    color: white;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+   transition: .3s linear;
+    border-left: #fff 2px solid;
+    padding-left: 4px;
+ 
+}
+.news-container .box h4 div,.news-container2 .box h4 div{
+    font-size: 18px;
+}
+.news-container .box:hover h4,.news-container2 .box:hover h4{
+    top: 88%;
+    opacity: 1;
+    transition: .3s linear;
+
+}
+.news-container .box:hover h3 i,.news-container2 .box:hover h3 i{
+    top: 40%;
+    opacity: 1;
+    transition: .3s linear;
+
+}
+.news-container .box::before,.news-container2 .box::before{
+    content: "";
+    position: absolute;
+    background-color: #f8286677;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0px;
+    opacity: 0;
+    transition: .3s linear;
+}
+.news-container .box:hover::before,.news-container2 .box:hover::before{
+    top: 0%;  
+    opacity: 1;  
+    transition: .3s linear;
+
+
+}
+.number{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.number .active{
+    color: #f82868;
+}
+.number span{
+    margin: 0px 8px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/*buisness*/
+#business{
+width: 100%;
+height: 1500px;
+overflow: hidden;
+
+}
+.buisness{
+    width: 100%;
+    height: 550px;
+    padding: 90px 2%;
+    
+}
+
+.buisness .heading{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+
+}
+.buisness h5{
+    font-size: 20px;
+    color: #f82868;
+    padding-left: 14px;
+    border-left: 2px solid #f82868;
+
+}
+.buisness h5 div{
+    font-size: 34px;
+    color: #fff;
+}
+.buisness .box {
+    position: relative;
+    width: 300px;
+    border-radius: 30px;
+    height: 60px;
+    box-shadow: 0 0 3px #707070 inset;
+    cursor: pointer;
+    transition:all .2s ease-in-out;
+    background-color: #fff;
+    
+    }
+    .buisness .box span:nth-child(1){
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 50%;
+        height: 100%;
+        border-radius: 30px;
+        text-align: center;
+        padding: 19px;
+        color: #000;
+        
+        
+
+    }
+    .buisness .box .active{
+        background-color: #f82868;
+        color: #fff !important;
+        transition:.5s linear;
+    }
+
+    
+    .buisness .box span:nth-child(2){
+        position: absolute;
+        color: #000;
+        width: 50%;
+        height: 100%;
+        border-radius: 30px;
+        right :0px;
+        padding: 19px;
+        top: 0px;
+        text-align: center;
+
+    
+    }
+    .buisness .content{
+        width: 100%;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    .buisness .content2{
+        width: 100%;
+        height: 1300px;
+        display: none;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buisness .content .box{
+        width: 60%;
+        height: 350px;
+        border-radius: 3px;
+        background-color: #fff;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .buisness .content .box h6{
+        font-size: 20px;
+        color: black;
+        padding: 10px;
+
+    }
+    .buisness .content .box h4{
+        font-size: 33px;
+        color: white;
+        font-weight: 900;
+        width: 100%;
+        background-color: #f82868;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .buisness .content .box button{
+        color: #f82868;
+        border: 2px solid #f82868;
+        padding: 10px 30px;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+    .buisness .content .box button:hover{
+        color: #fff;
+        background-color: #f82868;
+    }
+    .buisness .content2 .box{
+        width: 60%;
+        height: 350px;
+        border-radius: 3px;
+        background-color: #fff;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .buisness .content2 .box h6{
+        font-size: 20px;
+        color: black;
+        padding: 10px;
+
+    }
+    .buisness .content2 .box h4{
+        font-size: 33px;
+        color: white;
+        font-weight: 900;
+        width: 100%;
+        background-color: #f82868;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .buisness .content2 .box button{
+        color: #f82868;
+        border: 2px solid #f82868;
+        padding: 10px 30px;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+    .buisness .content2 .box button:hover{
+        color: #fff;
+        background-color: #f82868;
+    }
+
+    /*v.contact*/
+    #contact{
+        height: 650px;
+    }
+    .contact{
+
+        width: 100%;
+        height: 500px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        
+    }
+   
+    .back{
+        width: 100%;
+        height: 350px;
+        background-size: contain;
+        background-position:center;
+        background: url(../images/contact.jpg)no-repeat;
+        padding: 0px 2%;
+        position: relative;
+        z-index: 21;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .back::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 350px;
+        background-color: #f8286652;
+    }
+    .back h4{
+        font-size: 20px;
+        color: #fff;
+        padding-left: 14px;
+        border-left: 2px solid #fff;
+        z-index: 22;
+    
+    }
+    .back h4 div{
+        font-size: 34px;
+        color: #fff;
+        z-index: 22;
+      
+    }
+    
+    .back button{
+        color: #000;
+        padding: 10px 30px;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color: #fff;
+        cursor: pointer;
+        z-index: 444;
+    }
+    .back button:hover{
+        color: #fff;
+        background-color: #f82868;
+        
+    }
+    .foot{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .foot h5{
+        font-size: 40px;
+        text-transform: uppercase;
+        padding: 1px 24px;
+        background-color: #f82868;
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
+
+    }
+
+    .foot .bar ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        list-style: none;
+
+    }
+    
+    .foot .bar ul li{
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+    
+    .foot .bar ul li a{
+        font-size:18px;
+        color:#fff;
+    }
+   
+    .foot .bar ul li a:hover{
+        color:#f82868;
+        border-bottom: 7px #f82868 dotted;
+    }
+    
+}
+
+
+@media screen and (max-width: 567px) {
+    header a div{
+        font-size: 30px;
+        text-transform: uppercase;
+        padding: 1px 20px;
+        background-color: #f82868;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    header .bar{
+        position: fixed;
+        top:83px;
+        right: 0;
+        width:60%;
+        height: 77%;
+        overflow-y: auto;
+        background:#f82866d5;
+        transform:scaleY(0);
+        transform-origin:top;
+        opacity: 0;
+        border-radius: 4px;
+        text-align: center;
+        box-shadow: -1px 6px 11px 0px #050505;
+    
+    }
+    #menuicon{
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+    }
+    .fa-times{
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+    }
+    header .bar.nav-toggle{
+        transform:scaleY(1);
+        opacity: 1;
+    }
+    header .bar ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 90;
+        list-style: none;
+    }
+    
+    header .bar ul li{
+        margin-left:0px;
+        padding: 0 20px;
+    }
+    
+    header .bar ul li a{
+        font-size:23px;
+        color:#fff;
+        padding: 2px 4px;
+    }
+    /*home*/
+#home {
+    height: 100%;
+    padding: 30px 2%;
+    width: 100%;
+    color: #fff;   
+}
+.home{
+    width: 100%;
+    height: 400px;
+}
+.home .content{
+    position: absolute;
+    top: 150px;
+    left: 0px;
+}
+.home .content h3{
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: #fff;
+    text-transform: capitalize;
+    
+}
+.home .content div{
+    font-size: 30px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.home  .image{
+    width: 80%;
+    height: 400px;
+   background: url(../images/gym.png) no-repeat;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   margin: 90px auto;
+}
+
+.home  .image::before{
+    content: "";
+    width: 90%;
+    height: 90%;
+    background-color: #f82868;
+    border-radius: 50%;
+   
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    z-index: -1;
+}
+.home  .image::after{
+    content: "";
+    width: 95%;
+    height: 95%;
+    background-color: #080808;
+    border-radius: 50%;
+    border: 2px #f82868 dashed;
+    position: absolute;
+    left: 10px;
+    top: -9px;
+    z-index: -2;
+}
+
+
+
+
+
+#services{
+    width: 100%;
+    height:1500px;
+    padding: 0;
+    padding-top: 90px;
+
+}
+.services {
+    height:1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.services .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 350px;
+    background-color:#131313;
+    cursor: pointer;
+}
+.services .content:hover{
+    background-color: #f82868;
+}
+.services .content:hover div span{
+    background-color: #fff;
+    color: #f82868;
+
+}
+.services .content:hover div span::before{
+    border: #fff 2px dashed;
+
+}
+.services .content div span{
+    font-size: 40px;
+    color:#fff;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f82868;
+    position: relative;
+    z-index: 11;
+}
+.services .content div span::before{
+    content: "";
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: -1;
+    border: 2px dashed #f82868;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+.services .content h4{
+    font-size: 22px;
+    color:#fff;
+}
+.services .content p{
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/*about*/
+
+
+.about{
+    width: 100%;
+    height: 1200px;
+    padding: 0px 2%;
+    padding-top: 100px;
+}
+.about h5{
+    font-size: 20px;
+    color: #f82868;
+    padding-left: 14px;
+    border-left: 2px solid #f82868;
+}
+.about h5 div{
+    font-size: 34px;
+    color: #fff;
+}
+
+.about .content{
+    width:100%;
+    height: 830px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .content .left{
+    width:60%;
+}
+.about .content .left img{
+    width: 100%;
+    height: 500px;
+}
+.about .content .right{
+    width: 80%;
+    height: 400px;
+}
+.about .content .right h4{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .content .right p{
+    font-size: 19px;
+    padding-top: 20px;
+    line-height: 28px;
+    margin: 20px 0px;
+
+}
+.about .content .right div button{
+    color: #f82868;
+    border: 2px solid #f82868;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.about .content .right div button:hover{
+    color: #fff;
+    background-color: #f82868;
+}
+
+
+.team{  
+    
+    width: 100%;
+    height: 1900px;
+    background:url(../images/teamback.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0px 1%;
+    padding-top: 90px;
+  
+    
+}
+.team h5{
+    font-size: 20px;
+    color: #f82868;
+    padding-left: 14px;
+    border-left: 2px solid #f82868;
+
+}
+.team h5 div{
+    font-size: 34px;
+    color: #fff;
+}
+.team .content{
+    width: 100%;
+    height: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self:center;
+    padding: 0px 2%;
+}
+.team .content .info{
+    position: relative;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+}
+.team .content .info img{
+    width: 100%;
+    height: 300px;
+
+}
+.team .content .shape {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: #f82868;
+    clip-path: polygon(80% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 21% 50%);
+    top: 150px;
+    left: 0px;
+}
+.team .content .info h4{
+    font-size: 21px;
+    position: absolute;
+    top: 300px;
+    
+}
+
+.team .content .info p{
+    font-size: 16px;
+    position: absolute;
+    top: 340px;
+    width: 88%;
+   
+
+}
+.team .content .info .social{
+    width: 100%;
+    position: absolute;
+    bottom: -78px;
+    text-align: center;
+}
+.team .content .info .social i{
+    font-size: 39px;
+    color: #f82868;
+    margin: 0px 14px;
+}
+.team .content .info .social i:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+/*news*/
+
+.news{
+    width: 100%;
+    height: 1800px;
+    padding: 0px 2%;
+    padding-top: 100px;
+}
+
+.news h5{
+    font-size: 20px;
+    color: #f82868;
+    padding-left: 14px;
+    border-left: 2px solid #f82868;
+    margin-bottom: 10px;
+}
+.news h5 div{
+    font-size: 34px;
+    color: #fff;
+}
+
+
+.news-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+    height: 1400px;
+}
+.news-container2{
+    display: none;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+    height: 1400px;
+
+}
+
+.news-container .box,.news-container2 .box{
+    width: 70%;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+.news-container .box img,.news-container2 .box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit:cover;
+    z-index: 444;
+}
+.news-container .box h3 i,.news-container2 .box h3 i{
+    font-size: 30px;
+    color: #f82868;
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    transition: .3s linear;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 18px 27px;
+    border: 5px solid #ce5475;
+}
+.news-container .box h4,.news-container2 .box h4{
+    font-size: 15px;    
+    color: white;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+   transition: .3s linear;
+    border-left: #fff 2px solid;
+    padding-left: 4px;
+ 
+}
+.news-container .box h4 div,.news-container2 .box h4 div{
+    font-size: 18px;
+}
+.news-container .box:hover h4,.news-container2 .box:hover h4{
+    top: 88%;
+    opacity: 1;
+    transition: .3s linear;
+
+}
+.news-container .box:hover h3 i,.news-container2 .box:hover h3 i{
+    top: 40%;
+    opacity: 1;
+    transition: .3s linear;
+
+}
+.news-container .box::before,.news-container2 .box::before{
+    content: "";
+    position: absolute;
+    background-color: #f8286677;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0px;
+    opacity: 0;
+    transition: .3s linear;
+}
+.news-container .box:hover::before,.news-container2 .box:hover::before{
+    top: 0%;  
+    opacity: 1;  
+    transition: .3s linear;
+
+
+}
+.number{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.number .active{
+    color: #f82868;
+}
+.number span{
+    margin: 0px 8px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/*buisness*/
+#business{
+width: 100%;
+height: 1500px;
+overflow: hidden;
+
+}
+.buisness{
+    width: 100%;
+    height: 550px;
+    padding: 90px 1%;
+    
+}
+
+.buisness .heading{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+
+}
+.buisness h5{
+    font-size: 17px;
+    color: #f82868;
+    padding-left: 14px;
+    border-left: 2px solid #f82868;
+
+}
+.buisness h5 div{
+    font-size: 22px;
+    color: #fff;
+}
+.buisness .box {
+    position: relative;
+    width: 250px;
+    border-radius: 30px;
+    height: 50px;
+    box-shadow: 0 0 3px #707070 inset;
+    cursor: pointer;
+    transition:all .2s ease-in-out;
+    background-color: #fff;
+    
+    }
+    .buisness .box span:nth-child(1){
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 50%;
+        height: 100%;
+        border-radius: 30px;
+        text-align: center;
+        padding: 19px;
+        color: #000;
+        
+        
+
+    }
+    .buisness .box .active{
+        background-color: #f82868;
+        color: #fff !important;
+        transition:.5s linear;
+    }
+
+    
+    .buisness .box span:nth-child(2){
+        position: absolute;
+        color: #000;
+        width: 50%;
+        height: 100%;
+        border-radius: 30px;
+        right :0px;
+        padding: 19px;
+        top: 0px;
+        text-align: center;
+
+    
+    }
+    .buisness .content{
+        width: 100%;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    .buisness .content2{
+        width: 100%;
+        height: 1300px;
+        display: none;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buisness .content .box{
+        width: 70%;
+        height: 350px;
+        border-radius: 3px;
+        background-color: #fff;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .buisness .content .box h6{
+        font-size: 20px;
+        color: black;
+        padding: 10px;
+
+    }
+    .buisness .content .box h4{
+        font-size: 33px;
+        color: white;
+        font-weight: 900;
+        width: 100%;
+        background-color: #f82868;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .buisness .content .box button{
+        color: #f82868;
+        border: 2px solid #f82868;
+        padding: 10px 30px;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+    .buisness .content .box button:hover{
+        color: #fff;
+        background-color: #f82868;
+    }
+    .buisness .content2 .box{
+        width: 70%;
+        height: 350px;
+        border-radius: 3px;
+        background-color: #fff;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .buisness .content2 .box h6{
+        font-size: 20px;
+        color: black;
+        padding: 10px;
+
+    }
+    .buisness .content2 .box h4{
+        font-size: 33px;
+        color: white;
+        font-weight: 900;
+        width: 100%;
+        background-color: #f82868;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .buisness .content2 .box button{
+        color: #f82868;
+        border: 2px solid #f82868;
+        padding: 10px 30px;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+    .buisness .content2 .box button:hover{
+        color: #fff;
+        background-color: #f82868;
+    }
+
+    /*v.contact*/
+    #contact{
+        height: 650px;
+    }
+    .contact{
+
+        width: 100%;
+        height: 500px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        
+    }
+   
+    .back{
+        width: 100%;
+        height: 350px;
+        background-size: contain;
+        background-position:center;
+        background: url(../images/contact.jpg)no-repeat;
+        padding: 0px 2%;
+        position: relative;
+        z-index: 21;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .back::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 350px;
+        background-color: #f8286652;
+    }
+    .back h4{
+        font-size: 20px;
+        color: #fff;
+        padding-left: 14px;
+        border-left: 2px solid #fff;
+        z-index: 22;
+    
+    }
+    .back h4 div{
+        font-size: 34px;
+        color: #fff;
+        z-index: 22;
+      
+    }
+    
+    .back button{
+        color: #000;
+        padding: 10px 30px;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color: #fff;
+        cursor: pointer;
+        z-index: 444;
+    }
+    .back button:hover{
+        color: #fff;
+        background-color: #f82868;
+        
+    }
+    .foot{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .foot h5{
+        font-size: 40px;
+        text-transform: uppercase;
+        padding: 1px 24px;
+        background-color: #f82868;
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
+
+    }
+
+    .foot .bar ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        list-style: none;
+
+    }
+    
+    .foot .bar ul li{
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+    
+    .foot .bar ul li a{
+        font-size:18px;
+        color:#fff;
+    }
+   
+    .foot .bar ul li a:hover{
+        color:#f82868;
+        border-bottom: 7px #f82868 dotted;
+    }
+
+
+}
+
+
+    
